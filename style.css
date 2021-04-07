@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,500,900,400,300,100);
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i);
 
 html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
+
 
 strong.typewrite span {
     display: inline-block;
@@ -40,20 +42,81 @@ strong.typewrite span {
   text-shadow: 2px 2px #000;
 } */
 
-p {
-  font-family: Georgia;
-  font-style: italic;
-  text-shadow: 1px 1px #000;
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-4x {
+  font-size: 4em;
 }
 
-.bx-color {
-  color: #45505B;
-  font-size: 30pt;
-  margin-right: 0.5em;
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 688px) {
+  .bx-color {
+    color: #45505B;
+    font-size: 20pt;
+  }
+}
+
+@media only screen and (min-width: 689px) {
+  .bx-color {
+    color: #45505B;
+    font-size: 30pt;
+    margin-right: 0.5em;
+  }
 }
 
 .exclusions {
-  font-family: Georgia;
   font-size: 8pt;
   letter-spacing: 1px;
   text-shadow: none;
